@@ -1,6 +1,6 @@
 const fetchSimilarProducts = async () => {
   try {
-    const response = await fetch("/src/constants/similar-products.json");
+    const response = await fetch("yeshtery/src/constants/similar-products.json");
     if (!response.ok) {
       throw new Error("Network response was not ok");
     }
