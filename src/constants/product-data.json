@@ -1,0 +1,25 @@
+
+
+{
+    "name": "Adidas Black T-Shirt",
+    "desc": "Adidas black t-shirt lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+    "category": "Men",
+    "subCategories": ["Clothing", "Tops", "Adidas"],
+    "rating": 4.9,
+    "ratesNo": 22,
+    "price": 9999,
+    "priceAfterDis": 9999,
+    "discountPer": 30,
+    "sizes": ["Small", "Medium", "Large", "X Large", "XX Large"],
+    "colors": [
+        "assets/images/color1.png",
+        "assets/images/color2.png"
+    ],
+    "thumbnail": "images/thumbnail.png",
+    "images": [
+        "assets/images/slider1.png",
+        "assets/images/slider2.png",
+        "assets/images/slider3.png",
+        "assets/images/slider4.png"
+    ]
+}

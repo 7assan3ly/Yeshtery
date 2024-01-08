@@ -1,0 +1,26 @@
+.sim-products {
+    padding: var(--lg-screen-padding);
+    margin-bottom: 2rem;
+
+    @media screen and (max-width: 1440px) {
+        padding: var(--md-screen-padding);
+    }
+
+    .sim-head {
+        color: var(--primary-color);
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    .may-like {
+        color: #575756;
+        font-size: 22px;
+        font-weight: 400;
+    }
+
+    .products-wrapper {
+        padding-top: 2rem;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+}

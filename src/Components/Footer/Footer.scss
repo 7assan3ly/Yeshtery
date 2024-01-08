@@ -1,0 +1,123 @@
+footer {
+    padding: var(--lg-screen-padding);
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    background-color: #3C3C3B;
+    color: #fff;
+    
+    @media screen and (max-width: 1440px) {
+        padding: var(--md-screen-padding);
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+    }
+
+    .FooterDivider {
+        width: 100%;
+        height: 1px;
+        background-color: #868686
+    }
+
+    .upper {
+        padding-bottom: 2rem;
+        .left {
+            flex-direction: column;
+            align-items: start;
+            gap: 1rem;
+            padding-right: 4rem;
+            border-right: 1px solid #868686;
+            flex: 2;
+
+            p{
+                font-weight: 300;
+            }
+        }
+
+        .right {
+            flex: 3;
+            display: flex;
+            flex-direction: column;
+            padding-left: 3rem;
+
+            .subscribe {
+                .sub-head {
+                    font-weight: 500;
+                    font-size: 18px;
+                    margin-bottom: 1rem;
+                }
+                .sub-input {
+                    background-color: #fff;
+                    border-radius: 30px;
+                    padding: 0.25rem;
+                    justify-content: space-between;
+
+
+                    input {
+                        border: none;
+                        color: var(--primary-color);
+                        font-size: 12px;
+                        flex: 1;
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+
+                    button {
+                        gap: 0.5rem;
+                        border: none;
+                        background-color: var(--secondary-color);
+                        padding: 0.5rem 1rem;
+                        border-radius: 30px;
+                        font-size: 10px;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            .links {
+                padding-top: 2rem;
+                align-items: start;
+
+                .pages {
+                    flex: 2;
+                    display: flex;
+                    flex-direction: column;
+                    border-right: 1px solid #868686;
+                    list-style: none;
+                    gap: 1rem;
+
+                    a {
+                        color: #fff;
+                        text-decoration: none;
+                    }
+                }
+
+                .social {
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    list-style: none;
+                    padding-left: 2rem;
+                    gap: 1rem;
+
+                    li {
+                        gap: 0.5rem;
+                    }
+                }
+            }
+            
+        }
+    }
+
+    .lower {
+        justify-content: space-between;
+        padding: 1rem 0;
+        
+        .payemnt {
+            gap: 0.5rem;
+        }
+
+        .nasnav {
+            gap: 0.5rem;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    font-weight: 600;
+    padding: var(--lg-screen-padding);
+    @media screen and (max-width: 1440px) {
+        padding: var(--md-screen-padding);
+    }
+
+    li {
+        &:not(:last-child)::after{
+            display: inline-block;
+            margin: 0.25rem;
+            content: "/\00a0";
+        }
+
+        a {
+            color: #1D1D1B;
+        }
+    }
+}

@@ -1,0 +1,37 @@
+:root {
+  --primary-color: #542E90;
+  --secondary-color: #FFF200;
+  --lg-screen-padding: 0.5rem 17rem;
+  --md-screen-padding: 0.5rem 7rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.flexy {
+  display: flex;
+  align-items: center;
+}
+
+// SCROLLBAR Style
+::-webkit-scrollbar {
+  width: 7px;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: #3C3C3B;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #60399e;
+}

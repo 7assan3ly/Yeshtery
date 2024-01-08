@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+        "priceAfter": 9999,
+        "priceBefore": 9999,
+        "discountPer": 50,
+        "rating": 4.2,
+        "pickFrom": "Genena Mall",
+        "pickTo": "",
+        "duration": "",
+        "image": "Product1"
+    },
+    {
+        "id": 2,
+        "name": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+        "priceAfter": 9999,
+        "priceBefore": 0,
+        "discountPer": 0,
+        "rating": 4.2,
+        "pickFrom": "UK",
+        "pickTo": "Egypt",
+        "duration": "10",
+        "image": "Product2"
+    },
+    {
+        "id": 3,
+        "name": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+        "priceAfter": 9999,
+        "priceBefore": 9999,
+        "discountPer": 30,
+        "rating": 4.2,
+        "pickFrom": "Genena Mall",
+        "pickTo": "",
+        "duration": "",
+        "image": "Product3"
+    },
+    {
+        "id": 4,
+        "name": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+        "priceAfter": 9999,
+        "priceBefore": 9999,
+        "discountPer": 70,
+        "rating": 4.2,
+        "pickFrom": "Egypt",
+        "pickTo": "Egypt",
+        "duration": "2",
+        "image": "Product4"
+    }
+]
