@@ -2,39 +2,28 @@
 import './ProductCard.scss'
 
 // Import Product Image
-import Product1 from '../../images/sim-product1.png'
-import Product2 from '../../images/sim-product2.png'
-import Product3 from '../../images/sim-product3.png'
-import Product4 from '../../images/sim-product4.png'
 import Adidas from '/images/adidas.svg'
 
 const ProductCard = ({product}) => {
-  const imageMap = {
-    Product1,
-    Product2,
-    Product3,
-    Product4
-  };
-  const ProductImage = imageMap[product.image];
   return (
     <section className='product'>
       {/* Product Image */}
-      <img className='product-image' src={ProductImage} alt='Product Image'/>
+      <img className='product-image' src={product.image} alt='Product Image'/>
 
       {/* Product Name */}
-      <p className='product-name'>{product.name}</p>
+      <p className='product-name'>{product.title}</p>
 
       {/* Product Price and Brnad */}
       <div className="price-brand flexy">
         {/* Price */}
         <div className="price">
-          <p className="price-after">{product.priceAfter} <span>LE</span></p>
+          <p className="price-after">{product.price} <span>LE</span></p>
           {
-            product.priceBefore!==0 && product.discountPer!==0 && (
+            product.price!==0 && (
               <p className="price-before flexy">
-                <p>{product.priceBefore} LE</p>
+                <p>{product.price} LE</p>
                 <span className='discount'>
-                  {product.discountPer}% Off
+                  30% Off
                 </span>
               </p>
             )
@@ -50,20 +39,14 @@ const ProductCard = ({product}) => {
       {/* Rating */}
       <div className="rating flexy">
         <p>&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-        <p>{product.rating} Of 5</p>
+        <p>{product.rating?.rate} Of 5</p>
       </div>
 
       {/* Pickup INF */}
       <div className="pickup flexy">
-        {product.pickFrom && (
-          <p>From: <span>{product.pickFrom}</span></p>
-        )}
-        {product.pickTo && (
-          <p>To: <span>{product.pickTo}</span></p>
-        )}
-        {product.duration && (
-          <p>in: <span>{product.duration} Days</span></p>
-        )}
+          <p>From: <span>Egypt</span></p>
+          <p>To: <span>UK</span></p>
+          <p>in: <span>7 Days</span></p>
       </div>
     </section>
   )

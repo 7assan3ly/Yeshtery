@@ -69,9 +69,8 @@ class ProductDetails extends React.Component {
     return (
       <section className='product-wrapper'>
         <BreadCrumb
-          name={this.state.productData.name}
+          name={this.state.productData.title}
           category={this.state.productData.category}
-          subCategory = {this.state.productData.subCategories}
         />
 
         <div className="productDivider"></div>
@@ -80,7 +79,7 @@ class ProductDetails extends React.Component {
           {/* IMAGES Section */}
           <section className='images-wrapper'>
             <div className="thumbnail">
-              <img src={productImg} alt={this.state.productData.name} width={550} height={550} />
+              <img src={productImg} alt={this.state.productData.title} width={550} height={550} />
             </div>
             <div className="carousel flexy">
               <img src={ArrowLeft} alt="Arrow Left" width={16} height={24} />
@@ -100,7 +99,7 @@ class ProductDetails extends React.Component {
             </div>
 
             {/* Product Description */}
-            <h3 className="desc">{this.state.productData.desc}</h3>
+            <h3 className="desc">{this.state.productData.description}</h3>
 
             {/* Category */}
             <p className="catg">{this.state.productData.category}</p>
@@ -108,16 +107,16 @@ class ProductDetails extends React.Component {
             {/* Rating */}
             <div className="rating flexy">
               <p>&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-              <p>{this.state.productData.rating} Of 5</p>
-              <p>{this.state.productData.ratesNo} Rates</p>
+              <p>{this.state.productData.rating?.rate} Of 5</p>
+              <p>{this.state.productData.rating?.count} Rates</p>
             </div>
 
             {/* Price */}
             <div className="price flexy">
-              <p>{this.state.productData.priceAfterDis} <span>LE</span></p>
+              <p>{this.state.productData.price} <span>LE</span></p>
               <p>{this.state.productData.price} LE</p>
               <p className="discount">
-                {this.state.productData.discountPer}% Off
+                30% Off
               </p>
             </div>
 
@@ -128,11 +127,21 @@ class ProductDetails extends React.Component {
             <div className="sizes-wrapper">
               <p className='size-head'>Size</p>
               <ul className='sizes'>
-                {this.state.productData.sizes && this.state.productData.sizes.map((size,idx) => (
-                  <li key={idx}>
-                    <p>{size}</p>
-                  </li>
-                ))}
+                <li>
+                  <p>Small</p>
+                </li>
+                <li>
+                  <p>Medium</p>
+                </li>
+                <li>
+                  <p>Large</p>
+                </li>
+                <li>
+                  <p>X Large</p>
+                </li>
+                <li>
+                  <p>XX Large</p>
+                </li>
               </ul>
             </div>
 

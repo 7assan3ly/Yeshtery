@@ -18,7 +18,7 @@ class CartSlider extends React.Component{
     // Calculate Total Price
     const calculateTotalPrice = () => {
         return cartItems.reduce((total, item) => {
-          return total + item.product.priceAfterDis * item.quantity;
+          return total + item.product.price * item.quantity;
         }, 0);
     };
     return (
@@ -43,7 +43,7 @@ class CartSlider extends React.Component{
                             <CartItemCard key={idx} product={item} onRemoveItem={onRemoveItem} />
                         ))}
 
-                        <p className='total-price'>Total Price: {calculateTotalPrice()}</p>
+                        <p className='total-price'>Total Price: {calculateTotalPrice()}LE</p>
 
                         <div className="cart-actions flexy">
                             <button>Review Cart</button>

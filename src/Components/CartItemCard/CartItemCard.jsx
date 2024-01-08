@@ -16,7 +16,7 @@ const CartItemCard = ({product,onRemoveItem}) => {
         <div className="item-details">
             {/* Name */}
             <p className="product-name">
-                {product.product.name}
+                {product.product.title}
             </p>
             
             {/* Quantity */}
@@ -28,7 +28,7 @@ const CartItemCard = ({product,onRemoveItem}) => {
             <div className="price-remove flexy">
                 {/* Price */}
                 <p className="price">
-                    {product.product.priceAfterDis}
+                    {product.product.price}
                     <span>LE</span>
                 </p>
 
